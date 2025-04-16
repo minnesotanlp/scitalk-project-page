@@ -57,18 +57,48 @@
 
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block"> <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Jong Inn Park</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Maanas Taneja</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Dongyeop Kang</a><sup>*</sup>,</span>
-              <span class = "author-block"><a href = "FOURTH AUTHOR PERONSAL LINK" target="_blank">Qianwen Wang</a><sup>*</sup></span>
+              <div class="authors-wrapper" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        
+                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                  <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
+                    <img src="static\images\jonginn.jpeg" alt="Jong's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
+                  </div>
+                  <p style="margin-bottom: 0px; font-size: 18px;">         
+                    <a target="_blank" href="INSERTLINKHERE">Jong Inn Park</a>
+                  </p>
+                </div>
+                
+                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                  <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
+                      <img src="static\images\maanas.jpg" alt="Maanas' image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
+                  </div>
+                  <p style="margin-bottom: 0px; font-size: 18px;">
+                    <a target="_blank" href="INSERTLINKHERE">Maanas Taneja</a>
+                  </p>
+                </div>
+                
+                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                  <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
+                    <img src="static\images\qianwen.jpg" alt="Qianwen Wang's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
+                  </div>
+                  <p style="margin-bottom: 0px; font-size: 18px;">
+                    <a target="_blank" href="INSERLINKHERE">Qianwen Wang</a>
+                  </p>
+                </div>
+                
+                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                  <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
+                    <img src="static\images\dykang.jpg" alt="Prof. Kang's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
+                  </div>
+                  <p style="margin-bottom: 0px; font-size: 18px;">
+                    <a target="_blank" href="https://dykang.github.io/">Dongyeop Kang</a>
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- now instituiton stuff-->
-              <div class="is-size-5 publication-authors">
-                  <span class="author-block">University of Minnesota<br>COLM, 2025</span>
-                  <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-              </div>
-
+            <a class="subtitle" style="color: black !important;" href="https://minnesotanlp.github.io/">Minnesota NLP Lab<img src="static/logos/mnnlp.png" style="height: 1em; margin-inline: 5px;">, University of Minnesota</a>
 
               <div class="column has-text-centered">
                     <div class="publication-links">
@@ -82,17 +112,6 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -125,188 +144,166 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero teaser is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <div>
       <video width="320" height="240" poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/final_v2.3.mp4"
+        <source src="static/videos/speed.mp4"
         type="video/mp4">
       </video>
+      
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Example Video Generated by SciTalk: A short-form scientific explainer created using our multi-agent framework, grounded in original paper content and refined through iterative feedback loops.
+        <a style = "color:blue; text-decoration: underline;" href="https://arxiv.org/pdf/2502.00032"> Paper Link</a>
       </h2>
+    </div>
+
+    <div>
+      <video width="320" height="240" poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/querying.mp4"
+        type="video/mp4">
+      </video>
+      
+      <h2 class="subtitle has-text-centered">
+        Example Video Generated by SciTalk: A short-form scientific explainer created using our multi-agent framework, grounded in original paper content and refined through iterative feedback loops.
+        <a style = "color:blue; text-decoration: underline;" href="https://arxiv.org/pdf/2304.11267"> Paper Link</a>
+      </h2>
+    </div>
+
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Generating engaging, accurate short-form videos from scientific papers is
-challenging due to content complexity and the gap between expert authors
-and readers. Existing end-to-end methods often suffer from factual inaccu-
-racies and visual artifacts, limiting their utility for scientific dissemination.
-To address these issues, we propose SciTalk, a novel multi-LLM agentic
-framework, grounding videos in various sources, such as text, figures, vi-
-sual styles, and avatars. Inspired by content creators’ workflows, SciTalk
-uses specialized agents for content summarization, visual scene planning,
-and text and layout editing, and incorporates an iterative feedback mecha-
-nism where MLLM agents simulate user roles to refine generation prompts.
-Experimental evaluations show that SciTalk outperforms simple prompt-
-ing methods in generating scientifically accurate and engaging content.
-Although preliminary and not yet matching expert human quality, our
-framework provides valuable insights into the challenges and benefits of
-feedback-driven video generation.
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+<!-- Link CODE will be released soon section -->
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <div class="content">
+              <a class="title is-4" href="#takeaway" style="margin-bottom: 0;color: #3273dc;text-decoration: underline;">Code to the framework will be publically available soon!, </a>
+              </div>
+          </div>
+    </section>
+<!-- End code will be released soon section-->
 
 
 <!-- framework section -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Agentic Framework</h2>
-      <div class = "centered-container">
-        <img src = "static/images/framework_new.png" alt = "framework" width = "70%">
-      </div>
-      <div class="content has-text-justified">
-        <p>
-          Generating engaging, accurate short-form videos from scientific papers is
-challenging due to content complexity and the gap between expert authors
-and readers. Existing end-to-end methods often suffer from factual inaccu-
-racies and visual artifacts, limiting their utility for scientific dissemination.
-To address these issues, we propose SciTalk, a novel multi-LLM agentic
-framework, grounding videos in various sources, such as text, figures, vi-
-sual styles, and avatars. Inspired by content creators’ workflows, SciTalk
-uses specialized agents for content summarization, visual scene planning,
-and text and layout editing, and incorporates an iterative feedback mecha-
-nism where MLLM agents simulate user roles to refine generation prompts.
-Experimental evaluations show that SciTalk outperforms simple prompt-
-ing methods in generating scientifically accurate and engaging content.
-Although preliminary and not yet matching expert human quality, our
-framework provides valuable insights into the challenges and benefits of
-feedback-driven video generation.
-
-        </p>
-      </div>
-
-      <!-- explain how it egenrates through json-->
-
-      <div class = "centered-container">
-        <img src = "static/images/demo.png" alt = "framework" width = "70%">
-      </div>
-
-      <div class = "content has-text-justified">
-        <p>
-          Generating engaging, accurate short-form videos from scientific papers is
-          challenging due to content complexity and the gap between expert authors
-          and readers. Existing end-to-end methods often suffer from factual inaccu-
-          racies and visual artifacts, limiting their utility for scientific dissemination.
-          To address these issues, we propose SciTalk, a novel multi-LLM agentic
-          framework, grounding videos in various sources, such as text, figures, vi-
-          sual styles, and avatars. Inspired by content creators’ workflows, SciTalk
-          uses specialized agents for content summarization, visual scene planning,
-          and text and layout editing, and incorporates an iterative feedback mecha-
-          nism where MLLM agents simulate user roles to refine generation prompts.
-          Experimental evaluations show that SciTalk outperforms simple prompt-
-          ing methods in generating scientifically accurate and engaging content.
-          Although preliminary and not yet matching expert human quality, our
-          framework provides valuable insights into the challenges and benefits of
-          feedback-driven video generation.
-        </p>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-<!-- End video ca-->
-
-<!-- feedback section -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Feedback Loop</h2>
-      <div class = "centered-container">
-        <img src = "static/images/feedback1.png" alt = "framework" width = "70%">
-      </div>
-      <div class="content has-text-justified">
-        <p>
-          Generating engaging, accurate short-form videos from scientific papers is
-challenging due to content complexity and the gap between expert authors
-and readers. Existing end-to-end methods often suffer from factual inaccu-
-racies and visual artifacts, limiting their utility for scientific dissemination.
-To address these issues, we propose SciTalk, a novel multi-LLM agentic
-framework, grounding videos in various sources, such as text, figures, vi-
-sual styles, and avatars. Inspired by content creators’ workflows, SciTalk
-uses specialized agents for content summarization, visual scene planning,
-and text and layout editing, and incorporates an iterative feedback mecha-
-nism where MLLM agents simulate user roles to refine generation prompts.
-Experimental evaluations show that SciTalk outperforms simple prompt-
-ing methods in generating scientifically accurate and engaging content.
-Although preliminary and not yet matching expert human quality, our
-framework provides valuable insights into the challenges and benefits of
-feedback-driven video generation.
+      <h2 class="title is-3">Agentic Framework</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+         <!-- Your image here -->
+         <img src="static/images/framework_new.png" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+           Agentic Framework Diagram.
+         </h2>
+       </div>
+       <div class="item">
+         <!-- Your image here -->
+         <img src="static/images/framework_2.png" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+           Agentic Framework Diagram.
+         </h2>
+       </div>
+       </div>
 
-        </p>
+       <div class="centered-container-wide">
+       <div class="level-set">
+        <ul class="bullet-points">
+          <li><strong>Multi-Agent Workflow:</strong> SciTalk mimics a human content creator’s pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.
+            <li>
+              <strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, SciTalk scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.
+          </li>
+          <li>
+            <strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflector Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.
+          </li>
+          <li>
+            <strong>Final Evaluation & Refinement: </strong>A separate Evaluation Agent provides an end-to-end quality check using human-aligned metrics, ensuring improvements across content accuracy, clarity, visual synchronization, and engagement. This setup mirrors how creators iteratively refine videos, resulting in progressively enhanced outputs.
+           </li>
+        </ul>
       </div>
+
+    </div>
+
+
     </div>
   </div>
 </section>
 <!-- End video ca-->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Iterative Self-Feedback</h2>
+
+      <!-- Top Illustration -->
+      <div class="has-text-centered mb-5">
+        <img src="static/images/feedbackprompt.png" alt="Iterative Self-Writing Overview" style="max-width: 60%;">
+        <p class="is-size-6 has-text-centered mt-2"><em>Figure a</em></p>
+      </div>
+
+      <!-- Subfigure row -->
+      <div class="columns is-centered">
+        <div class="column is-one-third has-text-centered">
+          <img src="static/images/mlmfeedback.png" alt="Figure b" style="max-width: 100%;">
+          <p class="is-size-6 mt-2"><em>Figure b</em></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <img src="static/images/fig_c.png" alt="Figure c" style="max-width: 100%;">
+          <p class="is-size-6 mt-2"><em>Figure c</em></p>
+        </div>
+      </div>
+
+      <!-- Numbered Explanations -->
+      <div class="content mt-5 bullet-points">
+        <ol>
+          <li>
+            <strong><a href="#" style="color:#3273dc;">Setup</a></strong><br>
+            To emulate how human creators refine videos, <strong>SciTalk</strong> integrates an iterative feedback loop in its multi-agent framework. After generating an initial video draft, specialized multimodal agents evaluate individual sub-scenes based on domain-specific criteria (e.g., narrative coherence, visual clarity, pacing). This feedback is used to update prompts for the next iteration.
+          </li>
+        
+          <li>
+            <strong><a href="#" style="color:#3273dc;">Process</a></strong><br>
+            Each feedback iteration involves three key steps:
+            <ul style="margin-top: 0.75em; list-style-type: disc; padding-left: 1.5em;">
+              <li><strong>Sub-scene Evaluation:</strong> Agents like the <em>Flashtalk Feedback Agent</em> and <em>Sceneplan Feedback Agent</em> rate specific aspects such as script engagement and scene structure using targeted metrics.</li>
+              <li><strong>Prompt Refinement:</strong> <em>Reflector Agents</em> rewrite generation prompts using only relevant feedback for each agent type, ensuring domain-specific improvements without cross-agent interference.</li>
+              <li><strong>Re-generation:</strong> Updated prompts are passed back to generation agents to revise the output for the next iteration.</li>
+            </ul>
+          </li>
+        
+          <li>
+            <strong><a href="#" style="color:#3273dc;">Evaluation</a></strong><br>
+            We evaluated the impact of iterative refinement using both model-based and human assessments:
+            <ul style="margin-top: 0.75em; list-style-type: disc; padding-left: 1.5em;">
+              <li><strong>Model Evaluation:</strong> Multi-modal evaluators measured progression across 100+ video iterations using metrics like clarity, scientific integrity, and alignment.</li>
+              <li><strong>Human Evaluation:</strong> Annotators compared early and late iterations of generated videos for improvements in narrative flow, visual consistency, and viewer engagement.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--- example videos section
 for this right , we will have dynamicaly generate the html for each card from like a server or whatever
 and fot hat we need a webserive or a backend that will return the the html we need, generted using for loops etc 
 based on the number of videos to show and how to show them.
-
-
 -->
 
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Video Examples</h2>
         <div id = "reel_container" class = "reels-container">
-          <script>
-            async function loadReels() {
-              const response = await fetch("http://localhost:4131/reels/all");
-              const response_json = await response.json();
-
-              const cards_html = response_json["html"];
-
-              document.getElementById("reel_container").innerHTML = cards_html;
-              
-              //add the event listerens to the slides
-              const all_reel_forms = document.querySelectorAll('.reel-card-form');
-              for( let i = 0; i < all_reel_forms.length; i++){
-                var current_form = all_reel_forms[i];
-                const all_sliders = current_form.querySelectorAll('input[type="range"]');
-                for(let j =0 ; j< all_sliders.length; j++){
-                  let current_slider = all_sliders[j];
-                  const valueSpan = current_form.querySelector('#' + current_slider.id + 'Value');
-                  current_slider.addEventListener('input', () => {
-                    if (valueSpan) valueSpan.textContent = current_slider.value;
-                  });
-                }
-              }
-            }
-
-            loadReels();
-          </script>
         </div>
       </div>
     </div>

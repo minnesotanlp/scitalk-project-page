@@ -19,8 +19,13 @@ body {
 
 
 .teaser .hero-body {
-  padding-top: 0;
+  padding-top: 50px;
   padding-bottom: 3rem;
+  display:grid;
+  grid-template-columns: auto auto;
+  gap : 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-body video {
@@ -152,6 +157,15 @@ body {
 
 }
 
+.centered-container-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding : 50px;
+
+}
+
 .reel-card {
   display : flex;
   flex-direction: column;
@@ -179,7 +193,7 @@ body {
   border-color: aliceblue;
   background-color: #007AFF;
   font-size: medium;
-  color : white;
+  color : whitesmoke;
 }
 
 .reel-card-submit:hover{
@@ -199,11 +213,67 @@ body {
 
   gap: 30px;
 
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
   padding: 30px;
 }
+
+.bullet-points {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 2em;
+  color: black;
+  font-size: 1rem;
+}
+
+.bullet-points li::marker {
+  font-size: 1.5em; 
+}
+
+
+
+
+
+/* static slider css*/
+
+.static-slider {
+  margin-bottom: 15px;
+}
+
+.static-slider label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.static-slider input[type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #ccc;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.static-slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #3273dc;
+  pointer-events: none;
+}
+
+.metric-value {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 8px;
+}
+
+
 
 

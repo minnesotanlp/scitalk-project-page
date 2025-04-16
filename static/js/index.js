@@ -5,41 +5,33 @@ const video_list = [
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
-        "metric_1" : "1",
-        "metric_2" : "2",
-        "metric_3" : "3",
-        "metric_4" : "5",
-        "metric_5" : "5"
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
     },
 	{
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
-        "metric_1" : "1",
-        "metric_2" : "2",
-        "metric_3" : "3",
-        "metric_4" : "5",
-        "metric_5" : "5"
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
     },
 	{
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
-        "metric_1" : "1",
-        "metric_2" : "2",
-        "metric_3" : "3",
-        "metric_4" : "5",
-        "metric_5" : "5"
+		"flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
     },
 	{
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
-        "metric_1" : "1",
-        "metric_2" : "2",
-        "metric_3" : "3",
-        "metric_4" : "5",
-        "metric_5" : "5"
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
     }
 ]
 
@@ -48,11 +40,9 @@ function generateReelCard(reel){
 		title,
 		video_src,
 		paper_link,
-		metric_1,
-		metric_2,
-		metric_3,
-		metric_4,
-		metric_5
+		flashtalk_score,
+		sceneplan_score,
+		text_score,
 	  } = reel;
 
 
@@ -62,40 +52,33 @@ function generateReelCard(reel){
             <!--add the section we go to with the web service-->
             <form method="POST">
               <div class = "reel-card-form">
-    
-              
-                <label for="engagement">Engagement</label>
+
+                <label for="engagement">Curiosity</label>
                 <div>
-                  <input type="range" id="engagement" name="engagement" value = ${metric_1} min="1" max="5" value="3" step="1" disabled>
-                  <span id="engagementValue">${metric_1}</span>
+                  <input type="range" id="engagement" name="engagement" value = ${flashtalk_score} min="1" max="5" value="3" step="1" disabled>
+                  <span id="engagementValue">${flashtalk_score}</span>
                 </div>
               
-                <label for="visuals">Visuals</label>
+                <label for="visuals">Visual Relevance & Clarity</label>
                 <div>
-                  <input type="range" id="visuals" name="visuals" value = ${metric_2} min="1" max="5" value="3" step="1" disabled>
-                  <span id="visualsValue">${metric_2}</span>
+                  <input type="range" id="visuals" name="visuals" value = ${sceneplan_score} min="1" max="5" value="3" step="1" disabled>
+                  <span id="visualsValue">${sceneplan_score}</span>
                 </div>
   
-                <label for="content">Content</label>
+                <label for="content">Key Information Coverage</label>
                 <div>
-                  <input type="range" id="content" name="content" value = ${metric_3} min="1" max="5" value="3" step="1" disabled>
-                  <span id="contentValue">${metric_3}</span>
+                  <input type="range" id="content" name="content" value = ${text_score} min="1" max="5" value="3" step="1" disabled>
+                  <span id="contentValue">${text_score}</span>
                 </div>
-              
-                <label for="audio">Audio</label>
-                <div>
-                  <input type="range" id="audio" name="audio" value = ${metric_4} min="1" max="5" value="3" step="1" disabled>
-                  <span id="audioValue">${metric_4}</span>
-                </div>
-
               </div>
               
               <div style = "display: flex; flex-direction: row; gap:20px; justify-content:center;">
-                <div class="reel-card-movie">
                   <a href="${video_src}">
                     <div class="reel-card-submit">Watch Video</div>
                   </a>
-                </div>
+				    <a href="${paper_link}">
+                    <div class="reel-card-submit">Read Paper</div>
+                  </a>
               </div>
             </form>
           </div>

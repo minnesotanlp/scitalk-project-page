@@ -55,7 +55,8 @@ function generateReelCard(reel){
     <div class = "reel-card">
             <h2 style ="font-weight: bold; padding-bottom: 10px;">${title}</h2>
             <!--add the section we go to with the web service-->
-            <form method="POST">
+            <div>
+			<img src="${thumbnail_src}" alt="Watch Reel" width="150">	
               <div class = "reel-card-form">
 
                 <label for="engagement">Curiosity</label>
@@ -77,8 +78,6 @@ function generateReelCard(reel){
                 </div>
               </div>
 
-			  <img src="${thumbnail_src}" alt="Watch Reel" width="150">	
-
               <div style = "display: flex; flex-direction: row; gap:20px; justify-content:center;">
                   <a href="${video_src}">
                     <div class="reel-card-submit">Watch Video</div>
@@ -87,7 +86,7 @@ function generateReelCard(reel){
                     <div class="reel-card-submit">Read Paper</div>
                   </a>
               </div>
-            </form>
+            </div>
           </div>
     `
 }

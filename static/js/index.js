@@ -5,6 +5,7 @@ const video_list = [
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
         "flashtalk_score" : "1",
         "sceneplan_score" : "2",
         "text_score" : "3"
@@ -13,6 +14,7 @@ const video_list = [
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
         "flashtalk_score" : "1",
         "sceneplan_score" : "2",
         "text_score" : "3"
@@ -21,6 +23,7 @@ const video_list = [
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
 		"flashtalk_score" : "1",
         "sceneplan_score" : "2",
         "text_score" : "3"
@@ -29,6 +32,7 @@ const video_list = [
 		"title" : "Querying funciton callinh ",
         "video_src" : "static/videos/querying.mp4",
         "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
         "flashtalk_score" : "1",
         "sceneplan_score" : "2",
         "text_score" : "3"
@@ -39,6 +43,7 @@ function generateReelCard(reel){
 	const {
 		title,
 		video_src,
+		thumbnail_src,
 		paper_link,
 		flashtalk_score,
 		sceneplan_score,
@@ -71,7 +76,9 @@ function generateReelCard(reel){
                   <span id="contentValue">${text_score}</span>
                 </div>
               </div>
-              
+
+			  <img src="${thumbnail_src}" alt="Watch Reel" width="150">	
+
               <div style = "display: flex; flex-direction: row; gap:20px; justify-content:center;">
                   <a href="${video_src}">
                     <div class="reel-card-submit">Watch Video</div>

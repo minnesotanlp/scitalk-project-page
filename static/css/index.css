@@ -173,7 +173,7 @@ body {
   align-items: center;
 
   padding : 30px;
-  background-color: white;
+  background-color: whitesmoke;
 
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -212,7 +212,7 @@ body {
 
   gap: 30px;
 
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
@@ -240,6 +240,33 @@ body {
 .bullet-points li::marker {
   font-size: 1rem; 
 }
+
+/* teaser section videos */
+
+.video-pairs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.video-block {
+  width: 400px; /* Keeps the original video size + aligns caption */
+}
+
+.video-caption {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #333;
+  text-align: center;
+}
+
+.video-caption a {
+  color: blue;
+  text-decoration: underline;
+}
+
 
 
 

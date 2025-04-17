@@ -36,6 +36,51 @@ const video_list = [
         "flashtalk_score" : "1",
         "sceneplan_score" : "2",
         "text_score" : "3"
+    },
+	{
+		"title" : "Querying funciton callinh ",
+        "video_src" : "static/videos/querying.mp4",
+        "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
+    },
+	{
+		"title" : "Querying funciton callinh ",
+        "video_src" : "static/videos/querying.mp4",
+        "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
+    },
+	{
+		"title" : "Querying funciton callinh ",
+        "video_src" : "static/videos/querying.mp4",
+        "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
+    },
+	{
+		"title" : "Querying funciton callinh ",
+        "video_src" : "static/videos/querying.mp4",
+        "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
+    },
+	{
+		"title" : "Querying funciton callinh ",
+        "video_src" : "static/videos/querying.mp4",
+        "paper_link" : "https://arxiv.org/abs/2502.00032",
+		"thumbnail_src" : "static/thumbnails/thumbnail_querying.png",
+        "flashtalk_score" : "1",
+        "sceneplan_score" : "2",
+        "text_score" : "3"
     }
 ]
 

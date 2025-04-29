@@ -310,6 +310,189 @@ body {
   margin-left: 8px;
 }
 
+/* .custom-hero { */
+  /* background-color: #0D1B2A;   ← example background */
+  /* color: #ffffff;              ← high-contrast text */
+/* } */
+
+/* if you have links or buttons inside: */
+/* .custom-hero a, */
+/* .custom-hero .button { */
+  /* background-color: #ffffff; */
+  /* color: #ffdd57;              ← accent color for links/buttons */
+  /* color: #0D1B2A; */
+/* } */
+
+/* override all the text elements you care about */
+/* .custom-hero .title, */
+/* .custom-hero .subtitle, */
+/* .custom-hero p, */
+/* .custom-hero a { */
+  /* color: #ffffff; */
+  /* color: #E0FBFC; */
+/* } */
+
+.video-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 280px;       /* fix width of each card */
+  margin: 0 0.75rem;     /* horizontal gap between cards */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-block .video-block-video {
+  position: relative;
+  width: 100%;
+  /* padding-top: 56.25%;  16:9 aspect ratio */
+  overflow: hidden;
+}
+
+/* .video-block .video-block-video video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+} */
+
+.video-block .video-block-caption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;   /* push content to fill rest of card */
+}
+
+.reel-card video {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  width: 300px;    /* increase this for larger previews */
+  height: auto;    /* preserves aspect ratio */
+  border: 7px solid #ddd;
+  border-radius: 10px;
+}
+
+/* 5) Gradient behind each paper-group */
+.paper-row {
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* 3) Arrow between cards */
+.arrow {
+  align-self: center;
+  font-size: 2rem;
+  color: #888;
+  margin: 0rem;
+}
+
+/* make the title line flex so the bubble sits next to the text */
+.reel-card .card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* style the little step bubble */
+.reel-card .step {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #3498db;
+  color: #fff;
+  font-size: 0.9rem;
+}
 
 
+/* === Curiosity Slider (Engagement) === */
+#engagement::-webkit-slider-runnable-track {
+  background: #3498db;  /* blue track */
+  height: 6px;
+  border-radius: 3px;
+}
+#engagement::-webkit-slider-thumb {
+  background: #2980b9;  /* darker blue thumb */
+  border: none;
+  height: 16px;
+  width: 16px;
+  margin-top: -5px;     /* center vertically */
+  border-radius: 50%;
+}
+#engagement::-moz-range-track {
+  background: #3498db;
+  height: 6px;
+  border-radius: 3px;
+}
+#engagement::-moz-range-thumb {
+  background: #2980b9;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
 
+/* === Visual Relevance & Clarity Slider === */
+#visuals::-webkit-slider-runnable-track {
+  background: #2ecc71;  /* green track */
+  height: 6px;
+  border-radius: 3px;
+}
+#visuals::-webkit-slider-thumb {
+  background: #27ae60;  /* darker green thumb */
+  border: none;
+  height: 16px;
+  width: 16px;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+#visuals::-moz-range-track {
+  background: #2ecc71;
+  height: 6px;
+  border-radius: 3px;
+}
+#visuals::-moz-range-thumb {
+  background: #27ae60;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+/* === Key Information Coverage Slider === */
+#content::-webkit-slider-runnable-track {
+  background: #9b59b6;  /* purple track */
+  height: 6px;
+  border-radius: 3px;
+}
+#content::-webkit-slider-thumb {
+  background: #8e44ad;  /* darker purple thumb */
+  border: none;
+  height: 16px;
+  width: 16px;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+#content::-moz-range-track {
+  background: #9b59b6;
+  height: 6px;
+  border-radius: 3px;
+}
+#content::-moz-range-thumb {
+  background: #8e44ad;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}

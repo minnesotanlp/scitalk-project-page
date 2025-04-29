@@ -46,20 +46,23 @@
 
 </head>
 <body>
-  <section class="hero">
+  <!-- <section class="hero"> -->
+  <section class="hero custom-hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <!-- <div class="container is-max-desktop"> -->
+      <div class="container is-widescreen">
         <div class="columns is-centered">
 
           <div class="column has-text-centered">
+          <!-- <div class="column is-full has-text-centered"> -->
 
-            <h1 class="title is-1 publication-title">Stealing Creator’s Workflow: A Creator-Inspired Agentic Framework with Iterative Feedback Loop for Improved Scientific Short-form Generation</h1>
+            <h1 class="title is-1 publication-title">Stealing Creator's Workflow: A Creator-Inspired Agentic Framework with Iterative Feedback Loop for Improved Scientific Short-form Generation</h1>
 
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <div class="authors-wrapper" style="display: flex; flex-direction: row; justify-content: space-evenly;">
         
-                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                <div class="author-container" style="width: 10%; align-self: flex-start; ">
                   <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
                     <img src="static\images\jonginn.jpeg" alt="Jong's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
                   </div>
@@ -68,7 +71,7 @@
                   </p>
                 </div>
                 
-                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                <div class="author-container" style="width: 10%; align-self: flex-start; ">
                   <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
                       <img src="static\images\maanas.jpg" alt="Maanas' image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
                   </div>
@@ -77,7 +80,7 @@
                   </p>
                 </div>
                 
-                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                <div class="author-container" style="width: 10%; align-self: flex-start; ">
                   <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
                     <img src="static\images\qianwen.jpg" alt="Qianwen Wang's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
                   </div>
@@ -86,7 +89,7 @@
                   </p>
                 </div>
                 
-                <div class="author-container" style="width: 14%; align-self: flex-start; ">
+                <div class="author-container" style="width: 10%; align-self: flex-start; ">
                   <div class="author-image" style="position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 5px;">
                     <img src="static\images\dykang.jpg" alt="Prof. Kang's image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 50%;">
                   </div>
@@ -100,7 +103,7 @@
             <br>
 
             <!-- now instituiton stuff-->
-            <a class="subtitle" style="color: black !important;" href="https://minnesotanlp.github.io/">Minnesota NLP Lab<img src="static/logos/mnnlp.png" style="height: 1em; margin-inline: 5px;">, University of Minnesota</a>
+            <a class="subtitle" href="https://minnesotanlp.github.io/">Minnesota NLP Lab<img src="static/logos/mnnlp.png" style="height: 1em; margin-inline: 5px;">, University of Minnesota</a>
 
               <div class="column has-text-centered">
                     <div class="publication-links">
@@ -159,28 +162,35 @@
         
         <!-- Video 1 + Caption -->
         <div class="video-block">
-          <video width="400" height="300" autoplay controls muted loop>
-            <source src="static/videos/speed.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">
-            Example Paper Video Generation: <br>
-            <a href="https://arxiv.org/abs/2304.11267">
-              Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations
-            </a>
-          </p>
+          <div class="video-block-video">
+            <video width="400" height="300" autoplay controls muted loop>
+              <source src="static/videos/final_v2.4_refined_tuning.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-block-caption">
+            <p class="video-caption">
+              <a href="https://arxiv.org/abs/2402.03746">
+                Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback
+              </a>
+            </p>
+          </div>
         </div>
 
         <!-- Video 2 + Caption -->
         <div class="video-block">
-          <video width="400" height="300" autoplay controls muted loop>
-            <source src="static/videos/querying.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">
-            Example Paper Video Generation: <br>
-            <a href="https://arxiv.org/pdf/2502.00032">
-              Querying Databases with Function Calling
-            </a>
-          </p>
+          <div class="video-block-video">
+            <video width="400" height="300" autoplay controls muted loop>
+              <source src="static/videos/final_v2.4_refined_dynamic.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-block-caption">
+            <p class="video-caption">
+              <!-- Example Paper Video Generation: <br> -->
+              <a href="https://arxiv.org/abs/2402.14146">
+                Dynamic Multi-Reward Weighting for Multi-Style Controllable Generation
+              </a>
+            </p>
+          </div>
         </div>
 
       </div>
@@ -198,40 +208,31 @@
       <h2 class="title is-3">Agentic Framework</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-         <!-- Your image here -->
-         <img src="static/images/framework_new.png" alt="MY ALT TEXT"/>
-         <h2 class="subtitle has-text-centered">
-           Agentic Framework Diagram.
-         </h2>
-       </div>
-       <div class="item">
-         <!-- Your image here -->
-         <img src="static/images/framework_2.png" alt="MY ALT TEXT"/>
-         <h2 class="subtitle has-text-centered">
-           Agentic Framework Diagram.
-         </h2>
-       </div>
-       </div>
-
-       <div class="centered-container-wide">
-       <div class="level-set">
-        <ul class="bullet-points">
-          <li><strong>Multi-Agent Workflow:</strong> SciTalk mimics a human content creator’s pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.
-            <li>
-              <strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, SciTalk scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.
-          </li>
-          <li>
-            <strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflector Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.
-          </li>
-          <li>
-            <strong>Final Evaluation & Refinement: </strong>A separate Evaluation Agent provides an end-to-end quality check using human-aligned metrics, ensuring improvements across content accuracy, clarity, visual synchronization, and engagement. This setup mirrors how creators iteratively refine videos, resulting in progressively enhanced outputs.
-           </li>
-        </ul>
+          <!-- Your image here -->
+          <img src="static/images/conceptual_overview.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Figure 1. Conceptual overview of the multi-agent video generation pipeline.
+          </h2>
+         </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/detailed_workflow.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Figure 2. Detailed workflow on how generation agents contribute to scene composition.
+           </h2>
+        </div>
       </div>
 
-    </div>
-
-
+      <div class="centered-container-wide">
+        <div class="level-set">
+          <ul class="bullet-points">
+            <li><strong>Multi-Agent Workflow:</strong> SciTalk mimics a human content creator's pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.</li>
+            <li><strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, SciTalk scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.</li>
+            <li><strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflector Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.</li>
+            <li><strong>Final Evaluation & Refinement: </strong>A separate Evaluation Agent provides an end-to-end quality check using human-aligned metrics, ensuring improvements across content accuracy, clarity, visual synchronization, and engagement. This setup mirrors how creators iteratively refine videos, resulting in progressively enhanced outputs.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>

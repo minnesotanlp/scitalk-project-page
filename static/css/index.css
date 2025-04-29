@@ -377,6 +377,33 @@ body {
   border-radius: 10px;
 }
 
+.reel-card-button-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 6px;
+}
+
+.reel-card-label {
+  padding: 6px 8px; 
+  border-radius: 5px;  
+  font-size: medium !important;
+  border-color: aliceblue;
+  background-color: rgb(205, 205, 205);
+  font-size: medium;
+  color : black;
+}
+
+
+.reel-card-button{
+  padding: 2px; 
+  border-radius: 5px;  
+  font-size: large !important;
+  border-color: aliceblue;
+  background-color: #007AFF;
+  font-size: medium;
+  color : whitesmoke;
+}
+
 /* 5) Gradient behind each paper-group */
 .paper-row {
   background-color: #ddd;
@@ -496,3 +523,73 @@ body {
   width: 16px;
   border-radius: 50%;
 }
+
+
+/* === popup stuff === */
+
+.popup-overlay {
+  /*this overlay creates the modal effect and renders on top of everything else*/
+  display: none; /* hidden by default */
+  position: fixed; /*makes sure scolling doesnt move this, and it outside the strcutre, if not, it just shows uyp on top thats it*/
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000; /*shows up on top of everything*/
+
+  justify-content: center;
+  align-items: center;
+
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.popup-box {
+  /*the box that is rendered in the overlay */
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 0px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.popup-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: monospace;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  overflow-x: auto;
+  white-space: pre;
+  box-sizing: border-box;
+}
+
+.popup-box button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.popup-box button:hover {
+  background-color: #005fcc;
+}
+

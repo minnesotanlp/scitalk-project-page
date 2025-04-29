@@ -1,5 +1,14 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
+function showPopup(data) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-content").value = data;
+}
+
+function hidePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
 const video_list = [
     {
         "paper_title": "Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations",
@@ -8,7 +17,19 @@ const video_list = [
         "paper_link" : "https://arxiv.org/abs/2304.11267",
         "flashtalk_score" : "2.75",
         "sceneplan_score" : "3.56",
-        "text_score" : "3.00"
+        "text_score" : "3.00",
+
+        "flashtalk_prompt" : "Generate a 30-second video flastalk promptthe paper.",
+        "sceneplan_prompt" : "Generate a 30-second video sceneopan prompythe paper.",
+        "text_prompt" : "Generate a 30-second video textassistant prompt  the paper.",
+
+        "flashtalk_output" : "Generate a 30-second video flashtalk out the paper.",
+        "sceneplan_output" : "Generate a 30-second video sceneplan put the paper.",
+        "text_output" : "Generate a 30-second video text out the paper.",
+
+        "flashtalk_feedback" : "Generate a 30-second video flash feedbakc the paper.",
+        "sceneplan_feedback" : "Generate a 30-second video svene plan feedbakc the paper.",
+        "text_feedback" : "Generate a 30-second video text feedback the paper."
     },
 	{
         "paper_title": "Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations",
@@ -17,7 +38,20 @@ const video_list = [
         "paper_link" : "https://arxiv.org/abs/2304.11267",
         "flashtalk_score" : "3.00",
         "sceneplan_score" : "3.17",
-        "text_score" : "3.33"
+        "text_score" : "3.33",
+
+
+        "flashtalk_prompt" : "Generate a 30-second video flastalk promptthe paper.",
+        "sceneplan_prompt" : "Generate a 30-second video sceneopan prompythe paper.",
+        "text_prompt" : "Generate a 30-second video textassistant prompt  the paper.",
+
+        "flashtalk_output" : "Generate a 30-second video flashtalk out the paper.",
+        "sceneplan_output" : "Generate a 30-second video sceneplan put the paper.",
+        "text_output" : "Generate a 30-second video text out the paper.",
+
+        "flashtalk_feedback" : "Generate a 30-second video flash feedbakc the paper.",
+        "sceneplan_feedback" : "Generate a 30-second video svene plan feedbakc the paper.",
+        "text_feedback" : "Generate a 30-second video text feedback the paper."
     },
 	{
         "paper_title": "Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations",
@@ -26,7 +60,19 @@ const video_list = [
         "paper_link" : "https://arxiv.org/abs/2304.11267",
 		    "flashtalk_score" : "3.75",
         "sceneplan_score" : "3.67",
-        "text_score" : "3.36"
+        "text_score" : "3.36",
+
+        "flashtalk_prompt" : "Generate a 30-second video flastalk promptthe paper.",
+        "sceneplan_prompt" : "Generate a 30-second video sceneopan prompythe paper.",
+        "text_prompt" : "Generate a 30-second video textassistant prompt  the paper.",
+
+        "flashtalk_output" : "Generate a 30-second video flashtalk out the paper.",
+        "sceneplan_output" : "Generate a 30-second video sceneplan put the paper.",
+        "text_output" : "Generate a 30-second video text out the paper.",
+
+        "flashtalk_feedback" : "Generate a 30-second video flash feedbakc the paper.",
+        "sceneplan_feedback" : "Generate a 30-second video svene plan feedbakc the paper.",
+        "text_feedback" : "Generate a 30-second video text feedback the paper."
     },
 ]
 
@@ -38,6 +84,15 @@ function generateReelCard(reel) {
       flashtalk_score,
       sceneplan_score,
       text_score,
+      flashtalk_prompt,
+      sceneplan_prompt,
+      text_prompt,
+      flashtalk_output,
+      sceneplan_output,
+      text_output,
+      flashtalk_feedback,
+      sceneplan_feedback,
+      text_feedback
     } = reel;
   
     const iterNum = title.match(/\d+/)[0];
@@ -76,6 +131,24 @@ function generateReelCard(reel) {
               <span id="contentValue">${text_score}</span>
             </div>
           </div>
+
+          <div class="reel-card-button-grid">
+              <div class = "reel-card-label">Flash Talk Agent</div>
+              <button onclick="showPopup('${flashtalk_prompt}')" class="reel-card-button">⌨️</button>
+              <button onclick="showPopup('${flashtalk_output}')" class="reel-card-button">💾</button>
+              <button onclick="showPopup('${flashtalk_feedback}')" class="reel-card-button">↪️</button>
+
+                <div class = "reel-card-label">Sceneplan Agent</div>
+              <button onclick="showPopup('${sceneplan_prompt}')" class="reel-card-button">⌨️</button>
+              <button onclick="showPopup('${sceneplan_output}')" class="reel-card-button">💾</button>
+              <button onclick="showPopup('${sceneplan_feedback}')" class="reel-card-button">↪️</button>
+
+                <div class = "reel-card-label">Text Assist Agent</div>
+              <button onclick="showPopup('${text_prompt}')" class="reel-card-button">⌨️</button>
+              <button onclick="showPopup('${text_output}')" class="reel-card-button">💾</button>
+              <button onclick="showPopup('${text_feedback}')" class="reel-card-button">↪️</button>
+
+            </div>
         </div>
       </div>
     `;

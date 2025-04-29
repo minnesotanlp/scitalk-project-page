@@ -12,7 +12,7 @@ const video_list = [
     },
 	{
         "paper_title": "Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations",
-		"title" : "Iteration 3",
+		    "title" : "Iteration 3",
         "video_src" : "static/videos/final_v2.4_34B_f0.11_short_cur_vrc_kic_one-third_10_multiple_speed_refined_speed.mp4",
         "paper_link" : "https://arxiv.org/abs/2304.11267",
         "flashtalk_score" : "3.00",
@@ -21,12 +21,12 @@ const video_list = [
     },
 	{
         "paper_title": "Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations",
-		"title" : "Iteration 5",
-        "video_src" : "static/videos/final_v2.4_34B_f0.13_short_cur_vrc_kic_one-third_10_multiple_speed_refined_speed.mp4",
+		    "title" : "Iteration 4",
+        "video_src" : "static/videos/final_v2.4_34B_f0.12_short_cur_vrc_kic_one-third_10_multiple_speed_refined_speed.mp4",
         "paper_link" : "https://arxiv.org/abs/2304.11267",
-		"flashtalk_score" : "2.75",
-        "sceneplan_score" : "3.00",
-        "text_score" : "3.29"
+		    "flashtalk_score" : "3.75",
+        "sceneplan_score" : "3.67",
+        "text_score" : "3.36"
     },
 ]
 
@@ -50,7 +50,7 @@ function generateReelCard(reel) {
         </h2>
         <div>
           <!-- replace thumbnail img with a small inline video preview -->
-          <video muted autoplay loop>
+          <video muted autoplay controls loop>
             <source src="${video_src}" type="video/mp4">
           </video>
   
@@ -120,6 +120,9 @@ async function loadReels() {
               ${paper_title}
             </a>
           </h2>
+          <span style="font-size:0.9rem; color:#555;">
+            * Note: Video scores peaked at the 4th iteration but declined at the 5th iteration.
+          </span>
           <div class="reel-row" style="display:flex; gap:1rem;">
             ${cardsWithArrows}
           </div>

@@ -231,7 +231,7 @@
         <div class="level-set">
           <ul class="bullet-points">
             <li><strong>Multi-Agent Workflow:</strong> <em>SciTalk</em> mimics a human content creator's pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.</li>
-            <li><strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, SciTalk scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.</li>
+            <li><strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, <em>SciTalk</em> scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.</li>
             <li><strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflection Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.</li>
             <li><strong>Final Evaluation & Refinement: </strong>A separate Evaluation Agent provides an end-to-end quality check using human-aligned metrics, ensuring improvements across content accuracy, clarity, visual synchronization, and engagement. This setup mirrors how creators iteratively refine videos, resulting in progressively enhanced outputs.</li>
           </ul>
@@ -250,6 +250,30 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">Iterative Feedback Loop</h2>
+        <!-- example-reflection citation -->
+        <div class="content has-text-centered">
+          <p class="is-size-6">
+            Example reflections with the paper: 
+            <a href="https://arxiv.org/abs/2304.11267" target="_blank">
+                Speed Is All You Need: On-Device Acceleration of Large Diffusion Models via GPU-Aware Optimizations
+            </a>
+          </p>
+        </div>
+        <!-- feedback reflection color legend -->
+        <div class="feedback-color-legend">
+          <span class="legend-item">
+            <span class="legend-box" style="background:#82E0AA;"></span>
+            Inserted text
+          </span>
+          <span class="legend-item">
+            <span class="legend-box" style="background:#F1948A;"></span>
+            Deleted text
+          </span>
+          <span class="legend-item">
+            <span class="legend-box" style="background:#fff3cd;"></span>
+            Matched feedback sentence
+          </span>
+        </div>
       </div>
     </div>
 
@@ -295,7 +319,7 @@
       <div class="level-set">
         <ul class="bullet-points">
           <li>
-            <strong>Prompt-Level Feedback Integration:</strong> After each video draft is evaluated, SciTalk revises the generation prompts using only the feedback relevant to each agent. This ensures targeted refinement—e.g., the Flashtalk Generator only reflects comments about engagement, while the Sceneplan Generator adjusts visual structure.
+            <strong>Prompt-Level Feedback Integration:</strong> After each video draft is evaluated, <em>SciTalk</em> revises the generation prompts using only the feedback relevant to each agent. This ensures targeted refinement—e.g., the Flashtalk Generator only reflects comments about engagement, while the Sceneplan Generator adjusts visual structure.
           </li>
           <li>
             <strong>Frame-by-Frame Diff Mapping:</strong> We visualize how feedback influences prompt changes by computing token-level diffs between prompt versions and aligning each diff frame with the feedback sentences it addresses.

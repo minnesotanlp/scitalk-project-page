@@ -54,6 +54,8 @@ function generateReelCard(reel) {
             <source src="${video_src}" type="video/mp4">
           </video>
   
+          <!-- new metrics header -->
+          <div class="metrics-title">Feedback Metric Scores</div>
           <div class="reel-card-form">
             <label for="engagement">Curiosity</label>
             <div>

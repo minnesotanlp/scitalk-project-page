@@ -285,6 +285,40 @@ body {
   margin: 0 auto;         /* center horizontally */
 }
 
+/* ── Iterative Feedback Loop: caption tweaks ───────────────────────────── */
+#iterative-feedback .column.is-one-third h2.subtitle {
+  margin-top: 1.0rem;     /* small gap above caption */
+  font-size: 0.875rem;    /* slightly smaller caption text */
+}
+
+/* ── Video Examples: “Feedback Metric Scores” label ──────────────────── */
+.reel-card .metrics-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* ── Feedback reflection color legend ───────────────────────────── */
+.feedback-color-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.feedback-color-legend .legend-item {
+  display: inline-flex;
+  align-items: center;
+}
+.feedback-color-legend .legend-box {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
 
 /* static slider css*/
 

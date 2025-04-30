@@ -573,7 +573,9 @@ body {
   border-radius: 6px;
   resize: none;
   overflow-x: auto;
-  white-space: pre;
+  white-space: pre-wrap !important; /* enables wrapping */
+  word-break: break-word;
+  overflow-wrap: break-word;
   box-sizing: border-box;
 }
 

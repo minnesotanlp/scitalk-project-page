@@ -205,7 +205,11 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Agentic Framework</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Agentic Framework</h2>
+        </div>
+      </div>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Your image here -->
@@ -226,9 +230,9 @@
       <div class="centered-container-wide">
         <div class="level-set">
           <ul class="bullet-points">
-            <li><strong>Multi-Agent Workflow:</strong> SciTalk mimics a human content creator's pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.</li>
+            <li><strong>Multi-Agent Workflow:</strong> <em>SciTalk</em> mimics a human content creator's pipeline by orchestrating a set of specialized LLM-based agents across four stages—Preprocessing, Planning, Editing, and Feedback & Evaluation. Each agent is responsible for a distinct subtask, such as summarization (Flashtalk Generator), scene design (Sceneplan Generator), text and layout (Text Assistant and Layout Allocator), and background selection.</li>
             <li><strong>Grounding in Source Material: </strong>During the Preprocessing and Planning stages, SciTalk scrapes scientific papers (e.g., from arXiv) to extract text, images, and figures. These are reused throughout the pipeline to ensure factual accuracy and visual grounding, rather than relying on generative visuals.</li>
-            <li><strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflector Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.</li>
+            <li><strong>Iterative Feedback Loop: </strong>After the initial video composition, multimodal Feedback Agents (e.g., Flashtalk Feedback Agent, Sceneplan Feedback Agent) evaluate specific components using structured metrics. Reflection Agents then revise the original generation prompts based on this feedback, allowing each agent to improve its output in subsequent iterations.</li>
             <li><strong>Final Evaluation & Refinement: </strong>A separate Evaluation Agent provides an end-to-end quality check using human-aligned metrics, ensuring improvements across content accuracy, clarity, visual synchronization, and engagement. This setup mirrors how creators iteratively refine videos, resulting in progressively enhanced outputs.</li>
           </ul>
         </div>
@@ -239,60 +243,69 @@
 <!-- End video ca-->
 
 
-<section class="hero is-small">
+<!-- Iterative Feedback Loop start -->
+<section id="iterative-feedback" class="section hero is-small is-light">
   <div class="hero-body">
+    <!-- Section title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Iterative Feedback Loop</h2>
+      </div>
+    </div>
+
+    <!-- Video grid -->
     <div class="container">
-      <h2 class="title is-3">Iterative Self-Feedback</h2>
-
-      <!-- Top Illustration -->
-      <div class="has-text-centered mb-5">
-        <img src="static/images/feedbackprompt.png" alt="Iterative Self-Writing Overview" style="max-width: 60%;">
-        <p class="is-size-6 has-text-centered mt-2"><em>Figure a</em></p>
-      </div>
-
-      <!-- Subfigure row -->
-      <div class="columns is-centered">
-        <div class="column is-one-third has-text-centered">
-          <img src="static/images/mlmfeedback.png" alt="Figure b" style="max-width: 100%;">
-          <p class="is-size-6 mt-2"><em>Figure b</em></p>
-        </div>
-        <div class="column is-one-third has-text-centered">
-          <img src="static/images/json_in_action.png" alt="Figure c" style="max-width: 100%;">
-          <p class="is-size-6 mt-2"><em>Figure c</em></p>
-        </div>
-      </div>
-
-      <!-- Numbered Explanations -->
-      <div class="content mt-5 bullet-points">
-        <ol>
-          <li>
-            <strong><a href="#" style="color:#3273dc;">Setup</a></strong><br>
-            To emulate how human creators refine videos, <strong>SciTalk</strong> integrates an iterative feedback loop in its multi-agent framework. After generating an initial video draft, specialized multimodal agents evaluate individual sub-scenes based on domain-specific criteria (e.g., narrative coherence, visual clarity, pacing). This feedback is used to update prompts for the next iteration.
-          </li>
+      <div class="columns is-multiline is-variable is-4 is-centered">
         
-          <li>
-            <strong><a href="#" style="color:#3273dc;">Process</a></strong><br>
-            Each feedback iteration involves three key steps:
-            <ul style="margin-top: 0.75em; list-style-type: disc; padding-left: 1.5em;">
-              <li><strong>Sub-scene Evaluation:</strong> Agents like the <em>Flashtalk Feedback Agent</em> and <em>Sceneplan Feedback Agent</em> rate specific aspects such as script engagement and scene structure using targeted metrics.</li>
-              <li><strong>Prompt Refinement:</strong> <em>Reflector Agents</em> rewrite generation prompts using only relevant feedback for each agent type, ensuring domain-specific improvements without cross-agent interference.</li>
-              <li><strong>Re-generation:</strong> Updated prompts are passed back to generation agents to revise the output for the next iteration.</li>
-            </ul>
-          </li>
+        <div class="column is-one-third">
+          <video class="demo" playsinline autoplay muted loop style="width:100%;">
+            <source src="static/videos/flashtalk_feedback_reflection.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Flashtalk Generator Feedback Reflection
+          </h2>
+        </div>
         
+        <div class="column is-one-third">
+          <video class="demo" playsinline autoplay muted loop style="width:100%;">
+            <source src="static/videos/sceneplan_feedback_reflection.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Sceneplan Generator Feedback Reflection
+          </h2>
+        </div>
+        
+        <div class="column is-one-third">
+          <video class="demo" playsinline autoplay muted loop style="width:100%;">
+            <source src="static/videos/text_feedback_reflection.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Text Assistant Feedback Reflection
+          </h2>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Numbered explanations -->
+    <div class="centered-container-wide">
+      <div class="level-set">
+        <ul class="bullet-points">
           <li>
-            <strong><a href="#" style="color:#3273dc;">Evaluation</a></strong><br>
-            We evaluated the impact of iterative refinement using both model-based and human assessments:
-            <ul style="margin-top: 0.75em; list-style-type: disc; padding-left: 1.5em;">
-              <li><strong>Model Evaluation:</strong> Multi-modal evaluators measured progression across 100+ video iterations using metrics like clarity, scientific integrity, and alignment.</li>
-              <li><strong>Human Evaluation:</strong> Annotators compared early and late iterations of generated videos for improvements in narrative flow, visual consistency, and viewer engagement.</li>
-            </ul>
+            <strong>Prompt-Level Feedback Integration:</strong> After each video draft is evaluated, SciTalk revises the generation prompts using only the feedback relevant to each agent. This ensures targeted refinement—e.g., the Flashtalk Generator only reflects comments about engagement, while the Sceneplan Generator adjusts visual structure.
           </li>
-        </ol>
+          <li>
+            <strong>Frame-by-Frame Diff Mapping:</strong> We visualize how feedback influences prompt changes by computing token-level diffs between prompt versions and aligning each diff frame with the feedback sentences it addresses.
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+<!-- Iterative Feedback Loop end -->
 
 <!--- example videos section
 for this right , we will have dynamicaly generate the html for each card from like a server or whatever

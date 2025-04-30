@@ -267,9 +267,23 @@ body {
   text-decoration: underline;
 }
 
+/* 1) Give your section an ID so we can scope the styles nicely */
+#iterative-feedback video.demo {
+  /* drop-shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* soften the corners */
+  border-radius: 6px;
+}
 
+/* 2) (Optional) if you want the shadow on hover too: */
+#iterative-feedback video.demo:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
 
-
+.level-set {
+  max-width: 1000px;       /* or any consistent width like 850px */
+  margin: 0 auto;         /* center horizontally */
+}
 
 
 /* static slider css*/
